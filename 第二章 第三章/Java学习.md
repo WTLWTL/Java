@@ -1,4 +1,4 @@
-#Java学习进程
+# Java学习进程
 
 > 汪童乐
 
@@ -6,17 +6,17 @@
 >
 > 教材：Java程序设计案例教程（第二版）
 
-##第二章：Java开发环境配置及常用开发工具介绍
+## 第二章：Java开发环境配置及常用开发工具介绍
 
-###JDK的下载与安装
+### JDK的下载与安装
 
-#####常用工具：
+##### 常用工具：
 
--javac： Java编译器
+- javac： Java编译器
 
--java ：   启动 JVM运行.class文件
+- java ：   启动 JVM运行.class文件
 
--jar    ：      Java打包发布程序工具
+- jar    ：      Java打包发布程序工具
 
 ###设置环境变量
 
@@ -50,7 +50,7 @@ javac Hellojava.java//编译
 java Hellojava.java//运行
 ```
 
-###用UltraEdit编写java程序
+### 用UltraEdit编写java程序
 
 代码
 
@@ -71,7 +71,7 @@ public static void main(String[] args)
 
 > > 2019.07.31
 
-##第三章：Java语言基础
+## 第三章：Java语言基础
 
 - 3.1.1标识符
 

@@ -23,6 +23,8 @@
 				else{
 						System. out. println("脉压差正常。"+"可继续判断血压差是否正常");
 				}
+				
+				
 				if((systolicPressure>=160)&&(diastolicPressure>=115))
 							System. out. println("您是重度高血压，需要立即就医");
 				else

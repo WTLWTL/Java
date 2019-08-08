@@ -85,19 +85,13 @@ import javax. swing. JOptionPane;
   
   输入百分制成绩score,显示对其的评定
   
-  百分制成绩|等级制成绩
-  
-  -：|：-
-  
-  score>=90|优秀
-  
-  80=<score<=90|良好
-  
-  70<=score<=80|中
-  
-  60=<score<=70|及格
-  
-  score<60|不及格
+  | 百分制       | 等级制 |
+  | ------------ | ------ |
+  | score>=90    | 优秀   |
+  | 80<=score<90 | 良好   |
+  | 70<=score<80 | 中     |
+  | 60<=score<70 | 及格   |
+  | score<60     | 不及格 |
 
 ```java
 import javax. swing. JOptionPane;
@@ -144,6 +138,8 @@ public class Score{
 
   注：表达式的值只能是简单数据类型的值（如字符型，整型，短整型，字节型)，不能是其他类型
 
+  ### BMI值得评定
+  
   ```java
   import javax. swing. JOptionPane;
   public class Bmi{
@@ -169,10 +165,10 @@ public class Score{
   		else
   		JOptionPane. showMessageDialog(null,"输入的数据必须大于0");
   	}
-  }
+}
   ```
 
   
-
+  
   
 

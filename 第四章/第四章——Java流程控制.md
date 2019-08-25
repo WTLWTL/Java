@@ -168,7 +168,177 @@ public class Score{
 }
   ```
 
+  ----
   
+  > 2019.08.25
   
+  ## 循环结构
   
+  ```java
+  //挂号情况统计
+  import javax. swing. JOptionPane;
+  public class Outpatient_flow{
+  	public static void main(String args[])
+  	{
+  		int n1=0,n2=0,n3=0,n4=0;
+  		int num;
+  		String str;
+  		do{
+  			str = JOptionPane. showInputDialog("输入科室号码");
+  			num = Integer.parseInt(str);
+  			if(num>=0&&num<=4)
+  			{
+  				switch(num)
+  				{
+  					case 1:
+  								n1+=1;break;
+  					case 2:
+  								n2+=1;break;
+  					case 3:
+  								n3+=1;break;
+  					case 4:
+  								n4+=1;break;
+  				}
+  			}
+  			else
+  			JOptionPane. showMessageDialog(null,"输入出错");
+  		}while (num!=0);
+  		System. out. println("科室1的门诊流量为:"+n1);
+  		System. out. println("科室2的门诊流量为:"+n2);
+  		System. out. println("科室3的门诊流量为:"+n3);
+  		System. out. println("科室4的门诊流量为:"+n4);
+  	}
+  }
+  ```
+  
+  ### while语句
+  
+  语法格式
+  
+  ```java
+  while(表达式){
+  循环体
+  }
+  ```
+  
+  例：
+  
+  ```java
+  //用while循环求1+2+3+...+99+100的累加和
+  public class Sum_while{
+  	public static void main(String[] args){
+  		int sum=0,n=1;
+  		while(n!=101){
+  			sum+=n;
+  			n++; 
+  		}
+  		System. out. println(+sum);
+  	}
+  }
+  ```
+  
+  ```java
+  //编写程序，读入一组整数并计算其和，输入数字“0”则表示输入结束
+  import javax. swing. JOptionPane;
+  public class Sum_uncertain_while{
+  	public static void main(String args[]){
+  		int sum=0,data;
+  		String s;
+  		s = JOptionPane. showInputDialog(null,"输入一个整数:");//show,非showing
+  		data = Integer.parseInt(s);
+  		while(data!=0)
+  		{
+  			sum+=data;
+  			s = JOptionPane. showInputDialog(null,"输入一个整数:");
+  			data = Integer.parseInt(s);
+  		}
+  		JOptionPane. showMessageDialog(null,"和为："+sum);
+  	}
+  }
+  ```
+  
+  ### do...while语句
+  
+  语法格式
+  
+  ```java
+  do{
+  循环体
+  }while（表达式）
+  ```
+  
+  ```java
+  //编写程序，读入一组整数并计算其和，输入数字“0”则表示输入结束
+  import javax. swing. JOptionPane;
+  public class Sum_uncertain_do{
+  	public static void main(String args[])
+  	{
+  		int sum=0,data;
+  		String s;
+  		s = JOptionPane. showInputDialog(null,"输入一个整数");
+  		data = Integer. parseInt(s);
+  		do{
+  			sum+=data;
+  			s = JOptionPane. showInputDialog(null,"输入一个整数");
+  			data=Integer. parseInt(s);
+  		}while(data!=0);
+  		JOptionPane. showMessageDialog(null,"和为"+sum);
+  	}
+  }
+  ```
+  
+  ### for语句
+  
+  例：编程输出一个如图所示的九九乘法表
+  
+  ![](D:\桌面\Java\Java\第四章\九九乘法表.jpg)
 
+```java
+//九九乘法表
+public class Multiplication_table{
+	public static void main(String args[])
+	{
+		int i,j;
+		System. out. print("*  |");
+		for(i=1;i<=9;i++){	//打印表头
+			if(i==1)
+			System. out. print(" "+i);
+			else
+			System. out. print("  "+i);
+		}
+		System. out. println();	//用于换行
+		System. out. println("---|--------------------------");
+		for(i=1;i<=9;i++){
+			System. out. print(i+"  | ");
+			for(j=1;j<=i;j++){
+			if(i*j<10)
+			System. out. print(" "+i*j+" ");
+			else
+		System. out. print(i*j+" ");
+		}
+			System. out. println();
+		}
+	}
+}
+```
+
+## 跳转语句
+
+1. continue语句
+
+   终止本次循环，跳过循环体的其余部分，直接转向循环条件判断
+
+   ```java
+   //输出100-500间所有能被3和7整除的数（核心代码）
+   for(n =100;n<=500;n++){
+       if(n%3!=0||n%7!=0)//不能被3或7整除时
+           continue;
+       System. out. print(n+"  ");
+   }
+   ```
+
+2. break语句
+
+   从一个语句体的内部跳出去
+
+   

@@ -147,6 +147,7 @@ public class Sum_uncertain_do{
 }
 */
 
+/*
 //九九乘法表
 public class Multiplication_table{
 	public static void main(String args[])
@@ -172,4 +173,29 @@ public class Multiplication_table{
 			System. out. println();
 		}
 	}
+}
+
+*/
+
+import java. util.Scanner;
+public class SearchNum{
+	public static void main(String args[]){
+		int []Nums = {60,40,20,10,8,6,4,2};
+		Scanner sc = new Scanner(System.in);
+		System. out. println("请输入您想要查询的数字并回车");
+		int numSearch = sc.nextInt();
+		sc.close();
+		boolean flag = false;
+		for(int i=0;i<Nums.length;i++){
+			if(numSearch == Nums[i])
+			{
+				flag=true;
+				break;
+			}
+		}
+		if(flag==true)
+			System. out. println("列表中有符合查询条件的数字");
+		else
+			System. out. println("列表中无符合查询条件的数字");
+}
 }

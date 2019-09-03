@@ -324,7 +324,7 @@ public class Multiplication_table{
 
 ## 跳转语句
 
-1. continue语句
+1. **continue语句**
 
    终止本次循环，跳过循环体的其余部分，直接转向循环条件判断
 
@@ -337,8 +337,106 @@ public class Multiplication_table{
    }
    ```
 
-2. break语句
+2. **break语句**
 
-   从一个语句体的内部跳出去
+   从一个语句体的内部跳出
+
+## 常用算法
+
+1. **查询算法**——从一个列表中查找是否符合用户查找条件
+
+   ```java
+   import java. util.Scanner;
+   public class SearchNum{
+   	public static void main(String args[]){
+   		int []Nums = {60,40,20,10,8,6,4,2};//建立数组
+   		Scanner sc = new Scanner(System.in);//创建一个Scanner对象，并从命令行接收一个整数输入。
+   		System. out. println("请输入您想要查询的数字并回车");
+   		int numSearch = sc.nextInt();
+   		sc.close();//输入结束后关闭Scanner
+   		boolean flag = false;
+   		for(int i=0;i<Nums.length;i++){
+   			if(numSearch == Nums[i])
+   			{
+   				flag=true;
+   				break;
+   			}
+   		}
+   		if(flag==true)
+   			System. out. println("列表中有符合查询条件的数字");
+   		else
+   			System. out. println("列表中无符合查询条件的数字");
+   }
+   }
+   ```
+
+   - 注：
+
+     Scanner输入从dos窗口输入
+
+   ---
+
+   2019.09.03下午更新
+
+   ---
 
    
+
+2. **排序算法**
+
+   常用的排序算法——冒泡排序，插入排序，快速排序，归并排序
+   
+   用java实现冒泡排序步骤
+   
+   1. 扫描数列，比较相邻的元素。如第一个比第二个大，则交换位置
+   2. 对每一对相邻元素做同样的工作
+   3. 针对所有元素重复上述步骤
+   
+   ```java
+   //冒泡排序
+   public class BubbleSort{
+   	public static void main(String args[]){
+   		int []arr={10,8,6,4,2};
+   		for(int i=0;i<arr.length;i++)
+   		{
+   			for(int j=0;j<arr.length-i-1;j++){
+   				if(arr[j]>arr[j+1])
+   				{
+   					int temp=arr[j];
+   					arr[j]=arr[j+1];
+   					arr[j+1]=temp;
+   				}
+   			}
+   		}
+   		for(int i=0;x<arr.length;i++)
+   		{
+   			System. out. print(arr[i]+",");
+   		}
+   			System. out. println("\n");
+   	}
+   }
+   
+   ```
+
+3. **递归**
+
+   在数学与计算机科学中递归（Recursion）是指在函数的定义中使用函数自身的方法。求解斐波那契数列有两种方法：循环法与递归算法。递归法的代码量小，较简洁。但是可能会进行很多的重复计算和保留大量的重复副本，求解时间比较长。对于一些具有递归特性的问题，使用循环求解会比较复杂，这时用递归方法解决。
+
+   ```
+   
+   ```
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+

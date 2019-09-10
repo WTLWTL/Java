@@ -138,6 +138,8 @@ public class Score{
 
   注：表达式的值只能是简单数据类型的值（如字符型，整型，短整型，字节型)，不能是其他类型
 
+  如果表达式的值与任何vaule都不相同，则执行default中的语句序列，没有default语句，则直接跳出switch语句，执行后续语句
+  
   ### BMI值得评定
   
   ```java
@@ -163,11 +165,11 @@ public class Score{
   		JOptionPane. showMessageDialog(null,str);
   	}
   		else
-  		JOptionPane. showMessageDialog(null,"输入的数据必须大于0");
+		JOptionPane. showMessageDialog(null,"输入的数据必须大于0");
   	}
 }
   ```
-
+  
   ----
   
   > 2019.08.25
@@ -422,10 +424,53 @@ public class Multiplication_table{
 
    在数学与计算机科学中递归（Recursion）是指在函数的定义中使用函数自身的方法。求解斐波那契数列有两种方法：循环法与递归算法。递归法的代码量小，较简洁。但是可能会进行很多的重复计算和保留大量的重复副本，求解时间比较长。对于一些具有递归特性的问题，使用循环求解会比较复杂，这时用递归方法解决。
 
+   ```java
+   import javax. swing. JOptionPane;
+   public class Fibonacci{
+	public long fibonacciRecursion(int n){//递归求解
+   		if(1==n||2==n)
+   		{
+   			return 1;
+   		}
+   		else
+   		{
+   			return fibonacciRecursion(n-1)+fibonacciRecursion(n-2);
+   		}	
+   	}
+   	public long fibonacci(int n){
+   		if(1==n||2==n){
+   			return 1;
+   		}
+   		long f1=1;
+   		long f2=1;
+   		long temp=0;
+   		for(int i=2;i<n;i++)
+   			{
+   				temp=f2;
+   				f2=f2+f1;
+   				f1=temp;
+   			}
+   			return f2;
+   	}
+   	public static void main(String args[]){
+   		String s = JOptionPane. showInputDialog(null,"斐波那契数列F(n):");
+   		int n=Integer.parseInt(s);
+   		Fibonacci fibo = new Fibonacci();
+   		long start = System.currentTimeMillis();
+   		System. out. println("F("+n+")"+fibo.fibonacci(n));//fibo.fibonacci ??
+   		long end =  System.currentTimeMillis();
+   		System. out. println("非递归计算时间"+(end-start)/1000.0+"秒");
+   		start = System.currentTimeMillis();
+   		System. out. println("F("+n+")="+fibo.fibonacciRecursion(n));
+   		end = System.currentTimeMillis();
+   		System. out. println("递归计算时间："+(end-start)/1000.0+"秒");
+   	}//end main
+   }//end Fibonacci
+   //有一说一，这个递归是真的慢
    ```
    
-   ```
-
+   
+   
    
 
 

@@ -13,5 +13,6 @@ public class PatientsElderThanFifty{
 			}
 		}
 		System. out. println("\n50岁以上的患者人数："+count);
+		
 	}
 }

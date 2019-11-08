@@ -407,6 +407,114 @@ C_Surgen s1 = new C_Doctor("张鹰","男");//错误，赋值不相容
 2. 子类覆盖父类的成员方法。注：此时，子类的方法声明必须与父类被覆盖方法的声明保持一致，且子类不能覆盖父类中声明为final的方法
 3. 子类继承并重载父类的成员方法
 
+### super引用
+
+super和this有些类似，它是指向父类对象的一个引用型变量，或者说super表示的是当前对象的直接父类对象的引用。super引用有以下两种方法
+
+#### 调用父类的构造方法
+
+子类不能继承父类的构造方法，但是可以通过super调用父类的构造方法，语法格式如下：
+
+super([参数列表])
+
+与this的使用一样，在构造方法中，super（）引用必须是第一行语句
+
+#### 引用父类同名成员
+
+子类访问父类同名成员变量和成员方法的语法格式如下：
+
+`super.成员变量`
+
+`super.成员方法(参数列表)`
+
+### 抽象类与最终类
+
+当定义一个类时，除了声明类的访问权限外，有时还需要声明类的继承特性，即声明一个类是否为抽象类或最终类。在Java语言中，使用abstract关键字声明抽象类，使用final关键字声明最终类。
+
+抽象类通常包含抽象方法，抽象方法只有方法声明，而没有方法体。
+
+最终类是指不能被继承得类，即，最终类不能有子类。
+
+### 内部类
+
+类与类之间还有嵌套关系，即一个类的声明可以包含另一个类。
+
+```java
+public C_Patient{
+	Protected class CIn_Date{//内部成员类
+        private int year;
+        private int month=1;
+        private int day=1;
+    }
+    public static int patientCount;
+    String name;
+    String sex;
+    private CIn_Date birthday;
+    double temperature;
+    String prescription;
+}
+```
+
+## 类的多态性
+
+#### 编译时多态性
+
+对于同名方法，如果在编译时能够确定执行同名方法中的哪一个，则称为编译时多态性。方法的重载都属于编译时多态性。对于重载的多个方法，系统编译时根据实际参数的类型和数量，能够确定执行哪个方法。
+
+#### 运行时多态性：
+
+三个条件：
+
+1. 有继承关系存在
+2. 子类覆盖了父类的方法
+3. 父类的引用指向子类的对象
+
+```java
+class Doctor{
+	String name;
+	Doctor(String name)
+	{
+		this.name=name;
+	}
+	public void treatPatient(String P){
+		System. out. println("医生"+this.name+"治好"+P);
+	}
+}
+
+class Surgeon extends Doctor{
+	Surgeon(String name)
+	{ 
+		super(name);	//调用父类的构造方法
+	}
+		public void treatPatient(String P){
+			System. out. println("外科医生"+this.name+"治疗"+P);
+		} 
+		public void treatPatient(int T)
+		{
+			System. out. println("外科医生"+this.name+"治好"+T+"人");
+		}
+}
+public class ploymorphism{
+	public static void main(String[] args){
+		Doctor d=new Doctor("张仲景");
+		Surgeon s = new Surgeon("白求恩");
+		d.treatPatient("王华");
+		s.treatPatient("王华");
+		s.treatPatient(2);
+		d=s;
+		d.treatPatient("王华");
+	}
+}
+```
+
+Surgeon类继承于Doctor类，Surgeon 类中的treatPatient(String P)方法覆盖了父类的对应方法,'d=s;'，使父类Doctor的引用指向了子类Surgeon的对象，所以当执行'd.treatPatient("王华");'时存在运行时多态，调用的不是父类的'treatPatient(String P)'方法，而是子类的'treatPatient(String P)'方法。
+
+注：此时父类对象名并不能执行所有子类的方法，只能执行那些在父类中声明，在子类中被覆盖的方法。
+
+## 接口
+
+
+
 
 
 

@@ -639,6 +639,90 @@ equal方法在Object的派生类中被用来对实例进行比较，而不是对
 
 ![](D:\桌面\Java\Java\第六章——Java面向对象程序设计\Math类的常用方法.jpg)
 
+### Random类
+
+Random类中实现的随机是伪随机，也就是有规则地随机。
+
+在进行随机时，随机算法的起源数字称为种子数
+
+#### Random类的构造方法
+
+| 方法声明                   | 方法功能                                 |
+| -------------------------- | ---------------------------------------- |
+| 'public Random()'          | 创建一个新的随机数生成器                 |
+| 'public Random(long seed)' | 使用单个long种子创建一个新的随机数生成器 |
+
+#### Random类的常用成员方法
+
+| 方法声明                       | 方法功能                                     |
+| ------------------------------ | -------------------------------------------- |
+| public boolean nextBoolean     | 返回一个随机的boolean值                      |
+| public double nextDouble       | 返回一个随机的double值，数值介于[0,1.0）之间 |
+| public int nextInt()           | 返回一个随机的int值，该值介于int的区间       |
+| public int nextInt(int n)      | 返回一个随机的int值，该值介于[0,n)的区间     |
+| public void setSeed(long seed) | 重新设置Random对象的种子数                   |
+
+```java
+Random r = new Random();//创建一个Random类的对象
+double d1 = r.nextDouble;//生成[0,1.0)区间的小数
+double d2 = r.nextDouble*5;//生成[0,5.0)区间的小数
+double d3 = r.nextDouble*1.5 + 1;//生成[1，2.5)区间的小数
+int n1 = r.nextInt();//生成任意整数
+int n2 = r.nextInt(10);//生成[0,10)区间的整数
+n2 = Math.abs(r.nextInt()%10);//生成[0,10)区间的整数
+```
+
+### 基本类型的包装类
+
+在Java语言中，每种基本类型都有一个相应的包装类，这些类都在java.lang包中。8个基本数据类型所对应的包装类如下表所示
+
+| 基本数据类型 | 包装类    |
+| ------------ | --------- |
+| byte         | Byte      |
+| int          | Integer   |
+| float        | Float     |
+| char         | Character |
+| short        | Short     |
+| long         | Long      |
+| double       | Double    |
+| boolean      | Boolean   |
+
+所有的包装类都有以下共性
+
+1. 每个包装类被声明为final，即这些类都不能有子类
+2. 每个包装类有一个构造方法，可以通过一个相应的基本类型值生成实例
+3. 除了Character，其他包装类都有一个构造方法，可以通过一个相应的基本类型值的字符串生成实例
+4. 每个包装类都有一个实例方法'xxxValue()',这里的xxx是相应的基本类型名。该方法返回实例所包装的基本类型值
+5. 除了Character，其他包装类都有一个静态方法'valueOf(String s)'。该方法可以根据字符串s生成对应包装类的实例
+
+| 方法声明                                          | 方法功能                                                     |
+| ------------------------------------------------- | ------------------------------------------------------------ |
+| Integer(int value)                                | 构造一个新分配的Integer对象，它表示指定的int值               |
+| Integer(String s)                                 | 构造一个新分配的Integer对象，他表示String参数所指示的int值   |
+| public int Value()                                | 以int类型返回该Integer的值                                   |
+| public String toString()                          | 返回一个表示该Integer值得String对象                          |
+| public static String toString(int i)              | 返回一个表示指定整数得String对象                             |
+| public static String toString(int i,int radix)    | 返回用第二个参数指定基数表示的第一个参数的字符串表示形式     |
+| public static Integer valueOf(String s)           | 返回指定的String值得Integer对象                              |
+| public static Integer valueOf(String s,int radix) | 返回一个Integer对象，该对象保存了用第二个参数提供的基数进行解析时从指定的String中提取的值 |
+| public static int parseInt(String s)              | 将字符串参数作为有符号的十进制整数进行分析                   |
+| public int parseInt(String s, int radix )         | 使用第二个参数指定的基数，将字符串参数解析为有符号的整数     |
+
+```java
+Integer I1 = new Integer(10);//创建一个值为10的Integer对象
+Integer I2 = new Integer("20");//创建一个值为20的Integer对象
+int i1 = I1. int Value();//返回10
+String s1 = I2. toString();//返回"20"
+String s2 = Integer. toString(30);//返回"30"
+String s3 = Integer. toString(30,8);//返回"36"  返回用第二个参数指定基数表示的第一个参数的字符串表示形式
+Integer I3 = Integer. valueOf("40");//返回一个值为40的Integer对象
+Integer I4 = Integer. valueOf("40",16);//返回一个值为64的Integer对象
+int i2 = Integer.parseInt("50");//返回50
+int i3 = Integer.parseInt("50",8);//返回40
+```
+
+
+
 
 
 

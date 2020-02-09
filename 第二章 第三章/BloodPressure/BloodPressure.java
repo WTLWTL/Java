@@ -22,5 +22,6 @@ public class BloodPressure
 		System. out. println("患者血压诊疗效果："+诊断);
 		System. out. println("所开药品及数量:"+药名1+数量1+";"+药名2+数量2);//?
 		System. out. println("药品总价为："+划价);
+		System. out. println("患者数为"+患者数);
 		}
 	}

@@ -1,0 +1,34 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FlowLayDemo<第八章——图形用户界面_9b891f2a>",
+            "request": "launch",
+            "mainClass": "FlowLayDemo",
+            "projectName": "第八章——图形用户界面_9b891f2a"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-JFrameDemo<第八章——图形用户界面_9b891f2a>",
+            "request": "launch",
+            "mainClass": "JFrameDemo",
+            "projectName": "第八章——图形用户界面_9b891f2a"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Helloworld",
+            "request": "launch",
+            "mainClass": "Helloworld"
+        }
+    ]
+}

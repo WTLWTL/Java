@@ -2,7 +2,7 @@ package proj_6;
 import wrong. *;//导入wrong包
 public class Patient{
     private String name;
-    public static int id ;//静态变量id，起标志性作用：0为没挂号，非0为已挂号
+    public static int id;//静态变量id，起标志性作用：0为没挂号，非0为已挂号
     private int age;
     private String illness;
     public Patient(String name, int id, int age, String illness){

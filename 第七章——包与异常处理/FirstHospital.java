@@ -30,8 +30,8 @@ public class FirstHospital{
 	public static void main(String args[]){
 		Hospital hos = new InternalMedicine();
 		Hospital hos1 = new SurgicalDepartment();
-		System. out. println("医院名称："+hos.name);
-		System. out. println("医院地址："+hos1.addr);
+		System. out. println("医院名称："+Hos.name);
+		System. out. println("医院地址："+Hos1.addr);
 		hos.department();
 		hos1.department();
 	}

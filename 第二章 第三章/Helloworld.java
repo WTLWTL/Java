@@ -3,34 +3,35 @@ public class Helloworld
 public static void main(String[] args)
 {
 	System. out. println("************************");
-	System. out. println("**   ÄãºÃJava!");
-	System. out. println("**   Java: ÄãºÃÊÀ½ç!");
+	System. out. println("**   ä½ å¥½Java!");
+	System. out. println("**   Java: æ–°ä¸–ç•Œ!");
 	System. out. println("*************************");
 }	
 }
-public class BloodPressure
+/*public class BloodPressure
 {
 	public static void main(String args[])
 	{
 		String suffererId = "1503012";
-		int ÊÕËõÑ¹ = 160;
-		int ÊæÕÅÑ¹ = 92;
-		int »¼ÕßÊý = 0;
-		»¼ÕßÊý+=1;
-		char Õï¶Ï = 'H';
-		double µ¥¼Û1=26.5d;
-		String Ò©Ãû1 = "°¬Ë¾ßòÂØ";
-		double µ¥¼Û2 = 13.2d;
-		String Ò©Ãû2 = "¸´·½ÀûÑªÆ½";
-		int ÊýÁ¿1,ÊýÁ¿2;
-		ÊýÁ¿1=2;
-		ÊýÁ¿2=6;
-		double »®¼Û = µ¥¼Û1*ÊýÁ¿1+µ¥¼Û2*ÊýÁ¿2;
-		System. out. println("»¼Õß±àºÅÎª£º"+suffererId);
-		System. out. println("»¼ÕßÊÕËõÑ¹Îª£º"+ÊÕËõÑ¹);
-		System. out. println("»¼ÕßÊæÕÅÎª£º"+ÊæÕÅÑ¹);
-		System. out. println("»¼ÕßÑªÑ¹ÕïÁÆÐ§¹û£º"+Õï¶Ï);
-		System. out. println("Ëù¿ªÒ©Æ·¼°ÊýÁ¿:"+Ò©Ãû1+ÊýÁ¿1+";"+Ò©Ãû2+ÊýÁ¿2);//?
-		System. out. println("Ò©Æ·×Ü¼ÛÎª£º"+»®¼Û);
+		int ï¿½ï¿½ï¿½ï¿½Ñ¹ = 160;
+		int ï¿½ï¿½ï¿½ï¿½Ñ¹ = 92;
+		int ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ = 0;
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½+=1;
+		char ï¿½ï¿½ï¿½ = 'H';
+		double ï¿½ï¿½ï¿½ï¿½1=26.5d;
+		String Ò©ï¿½ï¿½1 = "ï¿½ï¿½Ë¾ï¿½ï¿½ï¿½ï¿½";
+		double ï¿½ï¿½ï¿½ï¿½2 = 13.2d;
+		String Ò©ï¿½ï¿½2 = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÑªÆ½";
+		int ï¿½ï¿½ï¿½ï¿½1,ï¿½ï¿½ï¿½ï¿½2;
+		ï¿½ï¿½ï¿½ï¿½1=2;
+		ï¿½ï¿½ï¿½ï¿½2=6;
+		double ï¿½ï¿½ï¿½ï¿½ = ï¿½ï¿½ï¿½ï¿½1*ï¿½ï¿½ï¿½ï¿½1+ï¿½ï¿½ï¿½ï¿½2*ï¿½ï¿½ï¿½ï¿½2;
+		System. out. println("ï¿½ï¿½ï¿½ß±ï¿½ï¿½Îªï¿½ï¿½"+suffererId);
+		System. out. println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¹Îªï¿½ï¿½"+ï¿½ï¿½ï¿½ï¿½Ñ¹);
+		System. out. println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½"+ï¿½ï¿½ï¿½ï¿½Ñ¹);
+		System. out. println("ï¿½ï¿½ï¿½ï¿½ÑªÑ¹ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½"+ï¿½ï¿½ï¿½);
+		System. out. println("ï¿½ï¿½ï¿½ï¿½Ò©Æ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:"+Ò©ï¿½ï¿½1+ï¿½ï¿½ï¿½ï¿½1+";"+Ò©ï¿½ï¿½2+ï¿½ï¿½ï¿½ï¿½2);//?
+		System. out. println("Ò©Æ·ï¿½Ü¼ï¿½Îªï¿½ï¿½"+ï¿½ï¿½ï¿½ï¿½);
 		}
 	}
+	*/

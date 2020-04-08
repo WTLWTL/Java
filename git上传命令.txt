@@ -14,6 +14,3 @@ SCODEÄ¬ÈÏÊÇUTF-8±àÂë´ò¿ªÎÄ¼þµÄ¡£Èç¹ûÓöµ½ÁËÏñGB18030 GBKµÈµÈµÄ±àÂë£¬¾ÍÏÔÊ¾ÂÒÂëÁË¡
 ¡°files.autoGuessEncoding¡±: false
 ½«ÆäÓÃ»§ÉèÖÃ¸ÄÎª
 ¡°files.autoGuessEncoding¡±: true
-¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
-°æÈ¨ÉùÃ÷£º±¾ÎÄÎªCSDN²©Ö÷¡¸Sean_gGo¡¹µÄÔ­´´ÎÄÕÂ£¬×ñÑ­ CC 4.0 BY-SA °æÈ¨Ð­Òé£¬×ªÔØÇë¸½ÉÏÔ­ÎÄ³ö´¦Á´½Ó¼°±¾ÉùÃ÷¡£
-Ô­ÎÄÁ´½Ó£ºhttps://blog.csdn.net/gongxun1994/article/details/80356031

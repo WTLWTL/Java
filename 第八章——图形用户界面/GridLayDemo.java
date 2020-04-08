@@ -1,15 +1,15 @@
 import java.awt.*;
 import javax.swing.*;
 public class GridLayDemo extends JFrame{
-	private String names[]={"按钮1","按钮2","按钮3","按钮4","按钮5","按钮6"};
+	private String names[]={"鎸夐挳1","鎸夐挳2","鎸夐挳3","鎸夐挳4","鎸夐挳5","鎸夐挳6"};
 	public GridLayDemo(){
-		super("网格布局");
+		super("缃戞牸甯冨眬");
 		setBounds(50,50,300,120);
-		setLayout(new GridLayout(3,3));//设置三行三列网格布局
+		setLayout(new GridLayout(3,3));//璁剧疆涓夎涓夊垪缃戞牸甯冨眬
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setVisible(true);
 		for(int i=0;i<names.length;i++){
-			add(new JButton(names[i]));//依次添加各个按钮
+			add(new JButton(names[i]));//渚濇娣诲姞鍚勪釜鎸夐挳
 		}
 	}
 	public static void main(String[] args)
